@@ -3,7 +3,21 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+// import  Antd  from 'ant-design-vue';
+// import 'ant-design-vue/dist/antd.less';
+
+
+//按需加载
+// import  {Button}  from 'ant-design-vue/lib/button';
+// import 'ant-design-vue/lib/button/style';
+
+//或者配置babel.config.js文件后
+import  {Button}  from 'ant-design-vue';
+
+
 Vue.config.productionTip = false;
+
+Vue.use(Button);
 
 new Vue({
   router,
